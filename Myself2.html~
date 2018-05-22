@@ -1,0 +1,648 @@
+<HTML>
+<!--
+1)Proper Fonts
+2)1st,2nd
+3)Border raidus.
+4)Content div 
+5)Z indexing
+6)Bulleting
+7)Splash Page
+8)Typing Speeds
+Web development:
+  1) Make a website which describes you, your skills, your hobbies and your achievements.
+  2) Make an informative website which contains the information of all the clubs in COEP-->
+<HEAD>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway|Rye|Source+Serif+Pro" rel="stylesheet">   
+
+        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+
+        <!-- Optional Bootstrap theme -->
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<style>
+body {
+	background-image : url("background1.jpg");
+}
+#strip {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	position : fixed;
+	width : 99%;
+	height : 15%;
+	background-image: url("backgroundtop.jpeg");
+	margin-top : 1.5%;
+	margin-left : 0.5%;
+	/*z-index: 1;*/
+}
+#contentContactMe {
+	background-image: url("wood10.jpeg");
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	width : 90%;
+	height : 460%;
+	padding-left: 50px;
+	padding-top: 40px;
+	position : absolute;
+	margin-top: 15%;
+	margin-left: 4.5%;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 20px;
+	display: none;
+	color: rgb(50,20,20);
+	z-index: -1;
+	line-height: 250%;
+	border-style:solid;
+	border-width:5px;
+	border-color:black;
+}
+#contact1 {
+	font-size: 70px;;
+	text-align: center;
+	font-family: 'Times New Roman';
+}
+#contact2 {
+	letter-spacing: 0.5px;
+	color: rgb(100,0,0);
+}
+#headC {
+	font-size: 40px;
+	color: rgb(75,10,10);
+	font-family: 'Rye', cursive;
+}
+#contentResume {
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	background-image: url("wood5.jpeg");
+	width : 90%;
+	height : 460%;
+	padding-left: 50px;
+	padding-top: 40px;
+	position : absolute;
+	margin-top: 15%;
+	margin-left: 4.5%;
+	display: none;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 20px;
+        z-index: -1;
+	line-height: 250%;
+	color: rgb(50,20,20);
+	border-style:solid;
+	border-width:5px;
+	border-color:black;
+	padding-right:20px;
+}
+#resume1 {
+	font-size: 70px;
+	text-align: center;
+	font-family: 'Times New Roman';
+}
+#resume2 {
+	letter-spacing: 0.5px;
+	color: rgb(100,0,0);
+}
+#contentIntroduction {
+	background-image: url("wood11.jpeg");
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	width : 90%;
+	height : 460%;
+	padding-left: 50px;
+	padding-top: 40px;
+	position : absolute;
+	margin-top: 15%;
+	margin-left: 4.5%;
+	display: none;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 20px;
+        z-index: -1;
+	line-height: 250%;
+	color: rgb(50,20,20);
+	border-style:solid;
+	border-width:5px;
+	border-color:black;
+	padding-right:20px;
+}
+#intro1 {
+	font-size: 60px;
+	text-align: center;
+	font-family: 'Times New Roman';
+}
+#intro2 {
+	letter-spacing: 0.5px;
+	color: rgb(100,0,0);
+}
+#headI {
+	font-size: 40px;
+	color: rgb(75,10,10);
+	font-family: 'Rye', cursive;
+}
+#contentWebsites {
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	background-image: url("wood7.jpeg");
+	width : 90%;
+	height : 460%;
+	padding-left: 50px;
+	padding-top: 40px;
+	position : absolute;
+	margin-top: 15%;
+	margin-left: 4.5%;
+	display: none;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 20px;
+        z-index: -1;
+	line-height: 250%;
+	color: rgb(50,20,20);
+	border-style:solid;
+	border-width:5px;
+	border-color:black;
+	padding-right:20px;
+}
+#contentStart {
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	background-image: url("wood12.jpeg");
+	width : 90%;
+	height : 25%;
+	padding-left: 50px;
+	padding-top: 40px;
+	position : absolute;
+	margin-top: 20%;
+	margin-left: 4.5%;
+	display: block;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 20px;
+        z-index: -1;
+	line-height: 250%;
+	color: rgb(50,20,20);
+	border-style:solid;
+	border-width:5px;
+	border-color:black;
+	padding-right:20px;
+}
+#changer {
+	font-size:80px;
+	line-height : 80px;
+	text-align:center;
+}
+#website1 {
+	font-size: 60px;
+	text-align: center;
+	font-family: 'Times New Roman';
+}
+#website2 {
+	letter-spacing: 0.5px;
+	color: rgb(100,0,0);
+}
+#website3 {
+	display : none;
+	width : 50%;
+	height : 5%;
+	background-image: url("wood9.jpeg");
+	text-align : center;
+	margin-top : 160px;
+}
+#t1 {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height : 90%;
+	width : 24%;
+	margin-top : 0.5%;
+	margin-left : 1.5%;
+	background-image: url("wood81.jpeg");
+	line-height : 80px;
+	text-align: center;
+	font-family: "Helvetica";
+    	vertical-align: middle;
+	font-size : 6vh;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	cursor: grab;
+}
+#t1:hover {
+	background-image : url("wood3.jpg");
+
+}
+#t1:active {
+	cursor: grabbing;
+}
+#t2 {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height : 90%;
+	width : 24%;
+	margin-top : 0.5%;
+	margin-left : 0.5%;
+	background-image: url("wood81.jpeg");
+	line-height : 80px;
+	text-align: center;
+	font-family: "Helvetica";
+    	vertical-align: middle;
+	font-size : 6vh;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	cursor: grab;
+}
+#t2:hover {
+	background-image : url("wood3.jpg");
+}
+#t2:active {
+	cursor: grabbing;
+}
+#t3 {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height : 90%;
+	width : 24%;
+	margin-top : 0.5%;
+	margin-left : 0.5%;
+	background-image: url("wood81.jpeg");
+	line-height : 80px;
+	text-align: center;
+	font-family: "Helvetica";
+    	vertical-align: middle;
+	font-size : 6vh;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	cursor: grab;
+}
+#t3:hover {
+	background-image : url("wood3.jpg");
+	transition: all 1s ease;
+}
+#t3:active {
+	cursor: grabbing;
+}
+#t4 {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height : 90%;
+	width : 24%;
+	margin-top : 0.5%;
+	margin-left : 0.5%;
+	background-image: url("wood81.jpeg");
+	line-height : 80px;
+	text-align: center;
+	font-family: "Helvetica";
+    	vertical-align: middle;
+	font-size : 6vh;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+	cursor: grab;
+}
+#t4:hover {
+	background-image : url("wood3.jpg");
+	transition: all 1s ease;
+}
+#t4:active {
+	cursor: grabbing;
+}
+#t5 {
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height : 90%;
+	width : 20%;
+	margin-top : 0.5%;
+	margin-left : 0.5%;
+	background-image: url("wood1.jpg");
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.git {
+	-moz-border-radius : 5px;
+	border-radius : 5px;
+	margin-left : 50px;
+}
+</style>
+<script language = javascript>
+var i;
+var n = 0;
+var words = ["Hi!","Hello!","This","is","Pranav Joglekar","Welcome to my page","Hope you liked it"];
+function change() {
+	document.getElementById("changer").innerHTML = words[n%7];
+	n++;
+	i = setTimeout(function() {change()},1000);
+}
+var myString = "gg";
+var myArray = myString.split("");
+var loopTimer;
+function frameLooper(id) {
+    if(myArray.length > 0) {
+        document.getElementById(id).innerHTML += myArray.shift();
+    } else {
+        clearTimeout(loopTimer);
+                return false;
+    }
+    loopTimer = setTimeout(function() { frameLooper(id)},250);
+}
+var myString2 = "gg";
+var myArray2 = myString.split("");
+var loopTimer2;
+function frameLooper2(id) {
+    if(myArray2.length > 0) {
+	if (myArray2[0] == "$") {
+	document.getElementById(id).innerHTML += "<br>";
+	myArray2.shift();
+	} else if(myArray2[0] == "*") {
+		document.getElementById(id).innerHTML += "<img src = '001-star-1.png' height = 30 width = 30>&nbsp;&nbsp;&nbsp;"
+ 		myArray2.shift();
+	} else if(myArray2[0] == "<") {
+	document.getElementById(id).innerHTML += "<h1><u><p id='headC'>Technical Skills";
+ 		myArray2.shift();
+	 }  else if(myArray2[0] == ">") {
+	document.getElementById(id).innerHTML += "<h1><u><p id='headC'>Non-Technical Skills";
+ 		myArray2.shift();
+	 } else {
+        document.getElementById(id).innerHTML += myArray2.shift();
+	}
+    } else {
+        clearTimeout(loopTimer2);
+                return false;
+    }
+    loopTimer2 = setTimeout(function() { frameLooper2(id)},50);
+}
+function contactMe() {
+	/*document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;*/
+	$("html, body").animate({
+    	scrollTop: 0
+	}, 600);
+	document.getElementById("contact1").innerHTML = "";
+	document.getElementById("contact2").innerHTML = "";
+	document.getElementById("contentContactMe").style.display = "none";
+	document.getElementById("contentResume").style.display = "none";
+	document.getElementById("contentIntroduction").style.display = "none";
+	document.getElementById("contentWebsites").style.display = "none";
+	document.getElementById("contentStart").style.display = "none";
+	clearTimeout(i);
+	var div = document.getElementById("contentContactMe");
+	if (div.style.display != "none") {
+		div.style.display = "none";
+		//document.getElementById("contentResume").style.display = none;	
+	} else {
+		div.style.display = "block";
+		myString = "SKILLS";
+		myArray = myString.split("");
+		frameLooper("contact1");
+		//document.getElementsByClassName("typing").style.webkitAnimationName = "type";
+		myString2 = " $$<$*fluently code in C.$*fluently code in javascript and AngularJS.$*good at solving logical questions and brain-teasers.$*acquainted with the syntax of Python.$*acquainted with the syntax of Java.$*acquainted with syntax of ASP.net.$*acquainted with the syntax of PHP.$*can create properly functioning websites and webapps using technologies like Bootstrap,AngularJS with HTML,CSS,Javascript.$*know image editing using G.I.M.P 2.$*know video editing using Adobe Premier.$*know Audio editing using Wavepad and Audacity.$*acquainted with Autocad.$$>$*can easily make friends.$*can play good chess.I am a State level Chess Player.$*can play good basketball.I am a State Level Basketball Player.$*not only fluent in English,Marathi and Hindi but can also communicate in French."
+		myArray2 = myString2.split("");
+		frameLooper2("contact2");
+	}
+}
+var myStringR = "gg";
+var myArrayR = myString.split("");
+var loopTimerR;
+function frameLooperR(id) {
+    if(myArrayR.length > 0) {
+	if (myArrayR[0] == "$") {
+	document.getElementById(id).innerHTML += "<br>";
+	myArrayR.shift();
+	} else {
+        document.getElementById(id).innerHTML += myArrayR.shift();
+	}
+    } else {
+        clearTimeout(loopTimerR);
+                return false;
+    }
+    loopTimerR = setTimeout(function() { frameLooperR(id)},250);
+}
+var myStringR2 = "gg";
+var myArrayR2 = myStringR.split("");
+var loopTimerR2;
+function frameLooperR2(id) {
+    if(myArrayR2.length > 0) {
+	if (myArrayR2[0] == "$") {
+	document.getElementById(id).innerHTML += "<br>";
+	myArrayR2.shift();
+	} else {
+        document.getElementById(id).innerHTML += myArrayR2.shift();
+	}
+    } else {
+        clearTimeout(loopTimerR2);
+                return false;
+    }
+    loopTimerR2 = setTimeout(function() { frameLooperR2(id)},3);
+}
+function resume() {
+	$("html, body").animate({
+    	scrollTop: 0
+	}, 600);
+	document.getElementById("contentStart").style.display = "none";
+	clearTimeout(i);
+	document.getElementById("resume1").innerHTML = "";
+	document.getElementById("resume2").innerHTML = "";
+	//document.getElementsByClassName("typing").style.webkitAnimationName = "";
+	//document.getElementById("content1").innerHTML = "Contact Me";
+	document.getElementById("contentContactMe").style.display = "none";
+	document.getElementById("contentResume").style.display = "none";
+	document.getElementById("contentIntroduction").style.display = "none";
+	document.getElementById("contentWebsites").style.display = "none";
+	var div = document.getElementById("contentResume");
+	if (div.style.display != "none") {
+		div.style.display = "none";
+			
+	} else {
+		div.style.display = "block";
+		myStringR = "HOBBIES";
+		myArrayR = myStringR.split("");
+		frameLooperR("resume1");
+		//document.getElementsByClassName("typing").style.webkitAnimationName = "type";
+		myStringR2 = "$$$I love to read.I am an avid reader.I have read a lot of books on a wide variety of topics.I think reading develops a person spiritually and intellectually,turning a boy into a man.I I am a great fan of fiction and so yes,obviously Dan Brown is my favorite author.I also like to go through online blogs especially about latest technologies and computing.It helps us to learn new things.Techcrunch is my favourite blog.I also love to read Manga.I have read Naruto,One piece,Slam Dunk etc.But,Detective Conan is my favourite mangaka.$$Apart frome reading I also like to code in my free time.Whenever I am bored,I go to hackerrank to hone my coding skills.You can call me anytime of the day and I will be ready to code.$$I also call myself a gamer.I have been playing Counter Strike since 7th grade regularly and so I am a good player.I also love playing DOTA 2 and Frozen Throne.I also love to solve the Sudoko.I can solve the hard level sudokos in a short period of time.I also know to solve the rubiks cube.I can solve the 3X3 in less than 2 minutes and the 4X4 in less than 5 minutes.I am currently learning to solve the 5X5.$$If I am not reading or coding I would be either playing a sport with my friends.I am an excellent chess player and have frequented the nationals when I played professionally.I am also a strong basketball player,in which due to my physique I have a considerable advantage.$$And also like every human I am always ready to hangout with friends and find it more refreshing and relaxing than anything.";
+		myArrayR2 = myStringR2.split("");
+		frameLooperR2("resume2");	
+	}
+}
+var myStringI = "gg";
+var myArrayI = myStringI.split("");
+var loopTimerI;
+function frameLooperI(id) {
+    if(myArrayI.length > 0) {
+	if (myArrayI[0] == "$") {
+	document.getElementById(id).innerHTML += "<br>";
+	myArrayI.shift();
+	} else {
+        document.getElementById(id).innerHTML += myArrayI.shift();
+	}
+    } else {
+        clearTimeout(loopTimerI);
+                return false;
+    }
+    loopTimerI = setTimeout(function() { frameLooperI(id)},250);
+}
+var myStringI2 = "gg";
+var myArrayI2 = myStringI2.split("");
+var loopTimerI2;
+function frameLooperI2(id) {
+    if(myArrayI2.length > 0) {
+	if (myArrayI2[0] == "$") {
+		document.getElementById(id).innerHTML += "<br>";
+	myArrayI2.shift();
+	} else if(myArrayI2[0] == "*") {
+		document.getElementById(id).innerHTML += "<img id='trophy' src = 'cup.png' height = 30px width = 30px>  ";
+		myArrayI2.shift();
+	} else if(myArrayI2[0] == "<") {
+		document.getElementById(id).innerHTML += "<h1><u><p id='headI'>In Sports : ";
+		myArrayI2.shift();	
+	} else if(myArrayI2[0] == ">") {
+		document.getElementById(id).innerHTML += "<h1><u><p id='headI'>Academic : ";
+		myArrayI2.shift();	
+	} else if(myArrayI2[0] == "!") {
+		document.getElementById(id).innerHTML += "<h1><u><p id='headI'>Miscellaneous : ";
+		myArrayI2.shift();	
+	}  
+	else {
+        document.getElementById(id).innerHTML += myArrayI2.shift();
+	}
+    } else {
+        clearTimeout(loopTimerI2);
+                return false;
+    }
+    loopTimerI2 = setTimeout(function() { frameLooperI2(id)},30);
+}
+function introduction() {
+	$("html, body").animate({
+    	scrollTop: 0
+	}, 600);
+	document.getElementById("contentStart").style.display = "none";
+	clearTimeout(i);
+	document.getElementById("intro1").innerHTML = "";
+	document.getElementById("intro2").innerHTML = "";
+	document.getElementById("contentContactMe").style.display = "none";
+	document.getElementById("contentResume").style.display = "none";
+	document.getElementById("contentIntroduction").style.display = "none";
+	document.getElementById("contentWebsites").style.display = "none";
+	//document.getElementById("content1").innerHTML = "Contact Me";
+	var div = document.getElementById("contentIntroduction");
+	if (div.style.display != "none") {
+		div.style.display = "none";	
+	} else {
+		div.style.display = "block";
+		myStringI = "ACHIEVEMENTS";
+		myArrayI = myStringI.split("");
+		frameLooperI("intro1");
+		//document.getElementsByClassName("typing").style.webkitAnimationName = "type";
+		myStringI2 = "$Some of my distinguished achievements are : $$<$*ranked 2nd in Sangli in State level Chess Tournament in 2011.$*recieved my international rating of 1523 in chess.$*represented Pune in Netball States at Solapur in 2016$*selected to play in the Pune Basketball League twice.$$>$*Ranked 366th in Maharashtra in CET 2017 with 172 marks.$*cleared the JEE Mains and Advanced 2017 with flying colours.$*secured 99 percentile in NFLAT in 2014$*passed the SSC and HSC examinations with 92% and 89% respectively.$$!$*ranked 34,762 on hackerrank with 951 points.$*secured 2nd place in a logic-quiz organized by IIT-Madras.$*Completed the Front End Development Course from freeCodeCamp$*Have solved the 3X3 rubiks cube in less than a minute.$*Can solve the 4X4 rubiks cube in less than 5 minutes.";
+		myArrayI2 = myStringI2.split("");
+		frameLooperI2("intro2");	
+	}
+}
+var myStringW = "gg";
+var myArrayW = myStringW.split("");
+var loopTimerW;
+function frameLooperW(id) {
+    if(myArrayW.length > 0) {
+	if (myArrayW[0] == "$") {
+	document.getElementById(id).innerHTML += "<br>";
+	myArrayW.shift();
+	} else {
+        document.getElementById(id).innerHTML += myArrayW.shift();
+	}
+    } else {
+        clearTimeout(loopTimerW);
+                return false;
+    }
+    loopTimerW = setTimeout(function() { frameLooperW(id)},250);
+}
+var myStringW2 = "gg";
+var myArrayW2 = myStringW2.split("");
+var loopTimerW2;
+function frameLooperW2(id) {
+    if(myArrayW2.length > 1) {
+	if (myArrayW2[0] == "$") {
+		document.getElementById(id).innerHTML += "<br>";
+	myArrayW2.shift();
+	} else if(myArrayW2[0] == "*") {
+		document.getElementById(id).innerHTML += "<img id='trophy' src = 'trophy.jpg' height = 25px width = 25px>";
+		myArrayW2.shift();
+	} else {
+        document.getElementById(id).innerHTML += myArrayW2.shift();
+	}
+    } else if(myArrayW2.length == 1) {
+	document.getElementById("website3").style.display = "block";
+	myArrayW2.shift();
+    } else {
+        clearTimeout(loopTimerW2);
+                return false;
+    }
+    loopTimerW2 = setTimeout(function() { frameLooperW2(id)},3);
+}
+function websites() {
+	$("html, body").animate({
+    	scrollTop: 0
+	}, 600);
+	document.getElementById("contentStart").style.display = "none";
+	clearTimeout(i);
+	document.getElementById("website1").innerHTML = "";
+	document.getElementById("website2").innerHTML = "";
+	document.getElementById("contentContactMe").style.display = "none";
+	document.getElementById("contentResume").style.display = "none";
+	document.getElementById("contentIntroduction").style.display = "none";
+	document.getElementById("contentWebsites").style.display = "none";
+	document.getElementById("website3").style.display = "none";			
+	//document.getElementById("content1").innerHTML = "Contact Me";
+	var div = document.getElementById("contentWebsites");
+	if (div.style.display != "none") {
+		div.style.display = "none";	
+	} else {
+		div.style.display = "block";
+		myStringW = "ABOUT ME";
+		myArrayW = myStringW.split("");
+		frameLooperW("website1");
+		//document.getElementsByClassName("typing").style.webkitAnimationName = "type";
+		myStringW2 = "$$Hi,This is Pranav Joglekar.I am currently 17 years old.I will be 18 on 26th of January.I stay in Model Colony,Shivajinagar,Pune and have been staying there since birth.So,I know all the nooks and crannies of Pune.$$I am currently studying at College of Engineering,Pune.I am pursuing my BTech IT degree there.I wish to pursue my Masters after my BTech degree.I completed my schooling from Vikhe Patil Memorial School,Pune.After 10th my Junior college was Modern College of Arts,Science and Commerce,Shivajinagar,Pune.$$I enjoy listening to music.My favourite bands are Coldplay and Imagine Dragons.Eminem is the greatest singer according to me.$$I have an interest in Mathematics and Computing.I am inrigued by the logical proofs in Mathematics.I would love if you suggest me some reading material on the matter.$$I hate the Indian TV shows.I prefer to watch the American and English shows.I especially love Sherlock and Narcos.Also I can watch Friends all day.Other than that I have also seen The Big Bang Theory,Grimm,Hereos,Breaking Bad.GoT,Suits,How I met your mother are on my wishlist and I will watch them after the exams.$$I also watch a lot of movies with my friends,mostly Hollywood but sometimes Bollywood too.I visit the theatres once a fortnight but I watch most of the movies on my Laptop.The Shawshank Redemption is my all time favourite.$$My Laptop-Dell inspiron 1420(I know),my bike-an Activa(MH 12 GB 6951) and my iPhone 4s are my most prized possesions.I can pass all my lifetime with just the three of them.$$My dream job is to work in France as a Software Engineer.I hope I achieve it.Cheers!!$I spend a lot of my time reading or writing on Quora or playing Minecraft.I am also a very good Counter-Strike and Mini-Militia player.I also enjoy playing other games like Vice-City,Frozen Throne and DOTA 2.I also love to read Manga.I am ready to give you tips on any of the preceding games.$$Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku,suggestions on what to read or watch next, random questions about the universe and the meaning of life, or even if only for some nice Coffee here in stunning Pune... just feel free to drop me a line anytime. I promise to reply A.S.A.P. You can reach me at +91 7350275521 or pranav2000joglekar@gmail.com or at any of the below sites-";
+		myArrayW2 = myStringW2.split("");
+		frameLooperW2("website2");	
+	}
+}
+</script>
+</HEAD>
+<BODY onload = 'change()'>
+<div class="container" id="strip">
+		<div class = "col-xs-4" id = "t1" onClick = "contactMe()"><span> Skills<!-Contact Me> <span></div>
+		<div class = "col-xs-4" id = "t2" onClick = "resume()">Hobbies<!-resume> </div>
+		<div class = "col-xs-4" id = "t3" onClick = "introduction()"> Achievements<!-Introduction> </div>
+		<div class = "col-xs-4" id = "t4" onClick = "websites()">About&nbsp;Me<!-Websites></div>
+</div>
+<div id = "contentStart">
+	<p id='changer'>Welcome.</p>
+</div>
+  <div id="contentContactMe">
+<h1><p id="contact1"></p></h1>
+<p id="contact2"></p>
+</p>
+</div>
+<div id = "contentResume">
+<p id = "textResume"></p>
+<h1><p id = resume1></p></h1>
+<p id = resume2><p>
+
+</p>
+</div>
+<div id = "contentIntroduction">
+<h1><p id = "intro1"></p></h1>
+<p id = "intro2"></p>
+
+</div>
+<div id = "contentWebsites">
+<p id = "textWebsites"></p>
+
+<h1><p id="website1"></p></h1>
+<p id = "website2"></p>
+<p id = "website3">
+<a href=https://www.linkedin.com/in/pranav-joglekar-767676126?trk=hp-identity-name><img src="linkedin.png" height=50px width=50px></a>
+<a href=https://github.com/Pranav2612000><img src="github.png" height=50px width=50px class='git'></a>
+<a href=https://github.com/Pranav2612000><img src="facebook.jpeg" height=50px width=50px class='git'></a>
+<a href=https://www.quora.com/profile/Pranav-Joglekar/><img src="quora.jpeg" height=50px width=50px class='git'></a>
+</p>
+</div>
+</BODY>
+</HTML>
